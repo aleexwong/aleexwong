@@ -71,8 +71,8 @@ Learning about incentive engines through manual UX observation
 - User authentication with Firebase + protected routes
 
 **Repos:**
-- [Frontend (Vite Calculator Project)](https://github.com/aleexwong/vitecalculatorproject)
-- [Backend (GPX Insight API)](https://github.com/aleexwong/gpx-insight-api)
+- [Frontend (Vite Calculator Project)](https://github.com/aleexwong/trainpace)
+
 
 ---
 
