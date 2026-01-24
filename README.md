@@ -1,4 +1,4 @@
-# Alex Wong — Senior Full Stack Developer
+# Alex Wong — SDET / Full Stack Developer
 
 **TypeScript • React • Node.js • AI/RAG Systems • Production Architecture**
 
