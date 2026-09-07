@@ -1,72 +1,67 @@
-Alex Wong — SDET / Full-Stack Developer
+# Alex Wong — Full-Stack Developer / SDET
 
-Building production tools that solve real problems. Strong fundamentals in React, Node.js, and Firebase-based architectures.
+I build and ship production web apps end to end: React and TypeScript on the front, Node and serverless APIs on the back, with automated tests and CI so releases stay safe.
+
+Vancouver, BC 🇨🇦 · [LinkedIn](https://linkedin.com/in/aleexwong) · [GitHub](https://github.com/aleexwong)
 
 ---
 
-## Current Work
+## What I Ship
 
-### **TrainPace** – Insight-first platform for self-coached runners
-Live at [trainpace.com](https://trainpace.com)
+### TrainPace — training platform for runners
+**Live:** [trainpace.com](https://www.trainpace.com) · React 18, TypeScript, Vite, Tailwind, Firebase, Vercel
 
-**Frontend** — React, TypeScript, Vite, TailwindCSS  
-- GPX elevation parsing & interactive visualization  
-- Real-time pace/fuel calculators with terrain awareness  
-- Firebase Auth with domain-restricted flows  
-- Branch-aware Vercel deployments
+A real product with real users, not a demo. I designed and built the whole stack.
 
-**Backend**
-- Node.js API
-- Features: elevation analysis, GPX parsing, fuel plan refinement
-- Firebase integration for auth + Firestore persistence
-- Modular endpoint design for feature expansion
+- Pace, VDOT and training-plan calculators with a shareable, saveable dashboard
+- GPX course analysis: elevation profiles, grade-adjusted pace, race-course comparison
+- AI race-fuel planner built on the Google Gemini API
+- Metered, cached Mapbox layer that keeps map costs predictable under load
+- Firebase Auth and Firestore, with a localStorage path so guests can use every tool
+- 80+ prerendered SEO pages plus Markdown mirrors so AI agents can read the site
+- Playwright end-to-end suite running in GitHub Actions on every push and PR
 
-### TriggerMap
-Behavioral analysis case study mapping engagement patterns in consumer apps. Manual UX observation, no scraping—systems thinking applied to product design.
+### Burnerate — subscription expense tracker
+**Live:** [burnerate.com](https://burnerate.com) · Next.js App Router, TypeScript, Firebase, Stripe, OpenAI
 
-[Case Study: Uber Eats 21-Day Engagement Mapping](https://shrub-shift-a82.notion.site/TriggerMap-UberEats-21-Days-213ec0fe600280c1bb91e4fbc1058dfb)
+A PWA that turns messy recurring spending into one clear number.
+
+- Upload a bank CSV and GPT-4o-mini detects your subscriptions, with a pattern-matching fallback when no API key is set
+- Natural-language input ("Netflix 20 a month") parsed into structured data
+- Stripe one-time checkout that unlocks a public profile page at `/u/<username>`; the webhook claims the handle, so nobody can reserve a name for free
+- Monthly snapshots written only by the Admin SDK, with Firestore rules blocking client writes
+- Free regional cost calculators (US/CA/AU/UK) and a no-account try mode
+- Sentry, PostHog funnel events, dark mode, Playwright smoke tests
+
+### TriggerMap — product case study
+21 days of manual UX observation mapping how a consumer app drives engagement. No scraping, just systems thinking applied to product design.
+[Read the case study](https://shrub-shift-a82.notion.site/TriggerMap-UberEats-21-Days-213ec0fe600280c1bb91e4fbc1058dfb)
+
+---
+
+## Strengths
+
+- **Product sense.** I pick the feature that helps the user, then cut the scope that does not.
+- **Testing as a habit.** Playwright suites in CI, page-object models, and QA experience from the other side of the fence.
+- **Cost and performance awareness.** Request budgets, caching layers, and prerendering because bills and Core Web Vitals are real constraints.
+- **Security on money paths.** Server-side validation of payments, usernames and database rules — never trusting the client.
+- **Clear code.** Typed, feature-scoped modules and docs that let the next person move fast.
 
 ---
 
 ## Stack
 
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black)
-![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/-Tailwind-38B2AC?logo=tailwind-css&logoColor=white)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/-Express-000000?logo=express&logoColor=white)
-![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?logo=firebase&logoColor=black)
-![Playwright](https://img.shields.io/badge/-Playwright-2EAD33?logo=playwright&logoColor=white)
-![Appium](https://img.shields.io/badge/-Appium-00B2E2?logo=appium&logoColor=white)
-![WebdriverIO](https://img.shields.io/badge/-WebdriverIO-EA5D5D?logo=webdriverio&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/-GitHub_Actions-2088FF?logo=github-actions&logoColor=white)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white)
-![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white)
-![AWS](https://img.shields.io/badge/-AWS-232F3E?logo=amazonaws&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/-Java-007396?logo=java&logoColor=white)
+**Languages** TypeScript · JavaScript · Python · Java · SQL  
+**Frontend** React 18 · Next.js · Vite · Tailwind · shadcn/ui · React Hook Form + Zod  
+**Backend** Node.js · Express · Next.js Server Actions · Firebase Auth/Firestore · MongoDB · MySQL  
+**AI** Google Gemini · OpenAI (Vercel AI SDK) · MCP  
+**Testing** Playwright · WebdriverIO · Appium · GitHub Actions  
+**Platform** Vercel · Docker · AWS · Stripe · Sentry · PostHog
 
 ---
 
-## What I Bring
+## Now
 
-- Production-ready SPAs with clean architecture  
-- API design focused on scalability and maintainability  
-- End-to-end testing automation with CI/CD integration  
-- Strong debugging and system analysis skills  
-- Cross-functional collaboration (worked closely with QA, product, and eng teams)
+Building AI race prediction and coaching agents for TrainPace on MCP + Firebase.
 
----
-
-## Contact
-
-- [LinkedIn](https://linkedin.com/in/aleexwong)
-- [GitHub](https://github.com/aleexwong)
-- [TrainPace](https://trainpace.com)
-
----
-
-**Next:** Exploring AI-driven race prediction and coaching agents using MCP + Firebase.
+**Open to full-stack and SDET roles.** Reach me on [LinkedIn](https://linkedin.com/in/aleexwong).
